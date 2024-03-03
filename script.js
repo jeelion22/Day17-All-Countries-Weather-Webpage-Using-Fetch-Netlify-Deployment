@@ -4,7 +4,7 @@ const rest_countries = fetch("https://restcountries.com/v3.1/all").then((readabl
 // define a function for geting weather details through the same fetch api and
 // use openweathermap api for retriving weather data for specific lat. and long.
 function getWeatherData (lat, lng, col) {
-    let weather = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=a87b392b9fc6be76b0a42dc5cc093147`).then((data)=>data.json()).then((data1) =>insertData(data1, col) )
+    let weather = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=32925a8aad58f3bc54ca4fef9467457f`).then((data)=>data.json()).then((data1) =>insertData(data1, col) )
 
 }
 
